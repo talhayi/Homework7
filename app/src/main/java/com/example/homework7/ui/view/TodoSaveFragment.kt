@@ -1,0 +1,20 @@
+package com.example.homework7.ui.view
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.homework7.databinding.FragmentTodoSaveBinding
+
+class TodoSaveFragment : Fragment() {
+
+    private lateinit var binding: FragmentTodoSaveBinding
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentTodoSaveBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+}
